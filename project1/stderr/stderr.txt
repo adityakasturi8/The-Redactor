@@ -1,0 +1,5 @@
+The redaction_of_gender has a count of : 2
+The redaction_of_concept has a count of : 1
+The redaction_of_phones has a count of : 4
+The redaction_of_dates has a count of : 2
+The redacted_of_address has a count of : 2
