@@ -1,5 +1,5 @@
 import argparse
-import all_functions
+from project1 import all_functions
 import os
 
 

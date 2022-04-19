@@ -5,7 +5,7 @@ import re
 import spacy
 import glob
 from nltk.stem import WordNetLemmatizer
-#nltk.download('all')
+nltk.download('all')
 nltk.download('averaged_perceptron_tagger')
 nltk.download('maxent_ne_chunker')
 nltk.download('words')
@@ -14,6 +14,7 @@ from nltk.corpus import wordnet
 from nltk.tree import Tree
 from commonregex import CommonRegex
 import en_core_web_md
+
 
 
 lst_of_stats = []
@@ -47,7 +48,7 @@ def all_genders(full_data):
     tokenized = nltk.word_tokenize(str(full_data))
     for every_word in tokenized:
         if every_word.lower() in lst_all_genders:
-            full_data = str(full_data).replace( every_word,'\u2588'*len(every_word))
+            full_data = (full_data).replace( every_word,'\u2588'*len(every_word))
             count = count +1
         
     #print(full_data)
@@ -104,7 +105,7 @@ def all_redaction_phone(full_data):
     #print(matched_phones)
     for phones in matched_phones:
         for every_phone in phones:
-            full_data = str(full_data).replace(every_phone, '\u2588'*len(every_phone))
+            full_data = (full_data).replace(every_phone, '\u2588'*len(every_phone))
     #print(full_data)
     
     string = "redaction_of_phones"
@@ -129,10 +130,10 @@ def all_redaction_names(full_data):
                     #print(redact_of_names)
     for names in final_result:
         for every_name in names:
-            full_data = str(full_data).replace(every_name,'\u2588'*len(every_name))
+            full_data = (full_data).replace(every_name,'\u2588'*len(every_name))
     #print(full_data)
-    string = "redaction_of_names"
-    get_stats(string,len((names)))
+    #string = "redaction_of_names"
+    #get_stats(string,len((names)))
     
     return full_data
 
@@ -158,7 +159,7 @@ def all_redaction_address(full_data):
     matched_address = re.findall(pattern, str(full_data))
     #print(matched_address)
     for address in matched_address:
-        full_data = str(full_data).replace(address,'\u2588'*len(address))
+        full_data = (full_data).replace(address,'\u2588'*len(address))
         
     #print(full_data)
     string = "redacted_of_address"
