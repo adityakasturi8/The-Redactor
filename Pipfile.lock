@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "ececad8a23c42fe6188bef8edcef201c062358df047e57d714ce0cdb151b896d"
+            "sha256": "e8590b40c3bdbabedd838f199a210882e0ef7e037120ab684a831c79bc5f7873"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -204,6 +204,13 @@
             ],
             "markers": "python_version >= '3.7'",
             "version": "==2.1.1"
+        },
+        "mpmath": {
+            "hashes": [
+                "sha256:604bc21bd22d2322a177c73bdb573994ef76e62edd595d17e00aff24b0667e5c",
+                "sha256:79ffb45cf9f4b101a807595bcb3e72e0396202e0b1d25d689134b48c4216a81a"
+            ],
+            "version": "==1.2.1"
         },
         "murmurhash": {
             "hashes": [
@@ -528,6 +535,14 @@
             ],
             "markers": "python_version >= '3.6'",
             "version": "==2.4.3"
+        },
+        "sympy": {
+            "hashes": [
+                "sha256:5939eeffdf9e152172601463626c022a2c27e75cf6278de8d401d50c9d58787b",
+                "sha256:df75d738930f6fe9ebe7034e59d56698f29e85f443f743e51e47df0caccc2130"
+            ],
+            "index": "pypi",
+            "version": "==1.10.1"
         },
         "thinc": {
             "hashes": [
