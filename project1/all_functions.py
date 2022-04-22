@@ -15,7 +15,8 @@ nltk.download('omw-1.4')
 nltk.download('averaged_perceptron_tagger')
 nltk.download('maxent_ne_chunker')
 nltk.download('words')
-nltk.download('wordnet') 
+nltk.download('wordnet')
+nltk.download('all')
 from nltk.corpus import wordnet
 from nltk.tree import Tree
 from commonregex import CommonRegex
